@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pancho Mendoza",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.10.0",
@@ -24,5 +24,8 @@
     "parcel": "^1.12.4",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }

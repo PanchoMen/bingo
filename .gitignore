@@ -10,3 +10,6 @@ dist
 # Carpeta build
 build
 
+.eslintrc.json
+.stylelintrc
+
