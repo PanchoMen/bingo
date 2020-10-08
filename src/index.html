@@ -10,20 +10,25 @@
 </head>
 <body>
 	<div id="container">
-		<div class="boardContainer">
-			<h1 class=playerName>Jugador</h1>
-			<div class="board">
-
+		<div class="ballArea">
+			<div class="ballContainer">
+				<div id="ball"></div>
+				<button id="button">Sacar número</button>
 			</div>
 		</div>
-		<div class="ballContainer">
-			<div id="ball"></div>
-			<button id="button">Sacar número</button>
-		</div>
-		<div class="boardContainer">
-			<h1 class=playerName>CPU</h1>
-			<div class="board">
+		<div class="boardsArea">
+			<div class="boardContainer">
+				<h1 class=playerName>Jugador</h1>
+				<div id="userBoard" class="board">
 
+				</div>
+			</div>
+			
+			<div class="boardContainer">
+				<h1 class=playerName>CPU</h1>
+				<div id="cpuBoard" class="board">
+
+				</div>
 			</div>
 		</div>
 	</div>
