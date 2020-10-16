@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
-	<script defer src="./js/index.js"></script>
-	<title>Bingo</title>
-</head>
-<body>
-	<div id="container">
-		<div class="ballArea">
-			<div class="ballContainer">
-				<div id="ball"></div>
-				<button id="button">Sacar número</button>
-			</div>
-		</div>
-		<div class="boardsArea">
-			<div class="boardContainer">
-				<h1 class=playerName>Jugador</h1>
-				<div id="userBoard" class="board">
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+		<script defer src="./js/index.js"></script>
+		<title>Bingo</title>
+	</head>
+	<body>
+		<div id="container">
+			<div class="ballArea">
+				<div class="ballContainer">
+					<div id="ball" class="hide"></div>
+					<button id="button">Iniciar</button>
 				</div>
 			</div>
-			
-			<div class="boardContainer">
-				<h1 class=playerName>CPU</h1>
-				<div id="cpuBoard" class="board">
+			<div class="boardsArea">
+				<div class="boardContainer">
+					<h1 class="playerName">Jugador</h1>
+					<div id="userBoard" class="board"></div>
+				</div>
 
+				<div class="boardContainer">
+					<h1 class="playerName">CPU</h1>
+					<div id="cpuBoard" class="board"></div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
