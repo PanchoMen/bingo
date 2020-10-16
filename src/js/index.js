@@ -5,6 +5,7 @@ const CARD_COLUMN_NUMBER = 5;
 const BOARD_ROWS_NUMBER = 3;
 const BOARD_DISTRIBUTION = _.shuffle([2, 2, 2, 2, 2, 2, 1, 1, 1]);
 const TIME_BETWEEN_TURNS = 2000;
+const synth = window.speechSynthesis;
 const balls = generateBalls();
 const ball = document.getElementById("ball");
 const button = document.getElementById("button");
@@ -26,10 +27,16 @@ function pickBall() {
 	return balls.shift();
 }
 
+function sayNumber(number) {
+	const utterThis = new SpeechSynthesisUtterance(number);
+	synth.speak(utterThis);
+}
+
 function newTurn() {
 	intervalID = setInterval(() => {
 		const number = pickBall();
 		ball.textContent = number;
+		sayNumber(number);
 		if (ball.classList.contains("hide")) {
 			ball.classList.remove("hide");
 		}
