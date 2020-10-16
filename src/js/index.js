@@ -4,6 +4,7 @@ const BALLS_NUMBER = 90;
 const CARD_COLUMN_NUMBER = 5;
 const BOARD_ROWS_NUMBER = 3;
 const BOARD_DISTRIBUTION = _.shuffle([2, 2, 2, 2, 2, 2, 1, 1, 1]);
+const TIME_BETWEEN_TURNS = 2000;
 const balls = generateBalls();
 const ball = document.getElementById("ball");
 const button = document.getElementById("button");
@@ -41,7 +42,7 @@ function newTurn() {
 		if (balls.length === 0 || checkWin()) {
 			clearInterval(intervalID);
 		}
-	}, 3000);
+	}, TIME_BETWEEN_TURNS);
 }
 
 function initBombo() {
